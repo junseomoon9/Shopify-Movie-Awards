@@ -2,8 +2,11 @@ import React from 'react'
 
 const Nominations = () => {
     return (
-        <div>
-            
+        <div className="nominations"> 
+            <h3>Nominations</h3>
+            <div className="nominations-container">
+                
+            </div>
         </div>
     )
 }
