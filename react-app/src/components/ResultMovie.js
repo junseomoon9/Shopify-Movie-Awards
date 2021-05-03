@@ -9,9 +9,6 @@ const ResultMovie = ({id, title, year, poster}) => {
     const addMovie =  () => {
         const movie = {id: id, title: title, year: year, poster: poster}
         addMovieToNominations(movie)
-        if (nominations.length === 4) {
-            alert("Maximum Capacity of Nominations Filled!")
-        }
     }
 
     const movie = nominations.find(movie => movie.id === id)

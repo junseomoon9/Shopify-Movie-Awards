@@ -246,3 +246,14 @@ form {
   background-color: #e4472b;
   color: white;
 }
+
+.banner {
+  width: 95%;
+  height: 5vh;
+  background-color: white;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #426696;
+}

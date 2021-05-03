@@ -2,6 +2,7 @@ import './App.css';
 import Nominations from './components/Nominations';
 import Results from './components/Results';
 import Search from './components/Search'
+import Banner from './components/Banner'
 import  {GlobalProvider} from "./context/GlobalContext";
 import left from "./img/left.png" 
 import right from "./img/right.png"
@@ -17,10 +18,12 @@ function App() {
           </div>
           <img className="rightImage" src={right} alt=""/>
         </div>
+    
         <div className="main">
           <div className="container-one">
             <Search />
           </div>
+          <Banner/>
           <div className="container-two">
             <Results />
             <Nominations/>
