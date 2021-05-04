@@ -16,7 +16,7 @@ const ResultMovie = ({id, title, year, poster}) => {
     }
 
     const popupMoreInfo = async () => {
-        let response = await fetch(`http://www.omdbapi.com/?i=${id}&apikey=${process.env.REACT_APP_OMDB_API}`)
+        let response = await fetch(`https://www.omdbapi.com/?i=${id}&apikey=${process.env.REACT_APP_OMDB_API}`)
         let data = await response.json()
         setData(data);
         

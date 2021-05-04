@@ -13,7 +13,7 @@ const Search = () => {
     const fetchSearchData = async (e) => {
         e.preventDefault();
         updateSearchTerm(query);
-        let response = await fetch(`http://www.omdbapi.com/?apikey=${process.env.REACT_APP_OMDB_API}&s=${query}`)
+        let response = await fetch(`https://www.omdbapi.com/?apikey=${process.env.REACT_APP_OMDB_API}&s=${query}`)
         let data = await response.json()
 
         if (data.Response === "True" ) {
