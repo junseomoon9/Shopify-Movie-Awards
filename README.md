@@ -1,4 +1,4 @@
-Shopify Front-End Developer Internship 2021 Challenge.
+Shopify Front-End Developer Internship 2021 Challenge. Built with React.
 
 Hosted Site: https://gallant-neumann-0d1853.netlify.app/
 
