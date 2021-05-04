@@ -15,7 +15,7 @@ const Search = () => {
         updateSearchTerm(query);
         let response = await fetch(`http://www.omdbapi.com/?apikey=${process.env.REACT_APP_OMDB_API}&s=${query}`)
         let data = await response.json()
-        console.log(data)
+
         if (data.Response === "True" ) {
             let movies = filterNonMovies(data.Search)
             setResults(movies)

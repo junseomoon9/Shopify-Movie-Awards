@@ -17,6 +17,8 @@ h3 {
   margin-left: 0.6rem;
 }
 
+/* APP */
+
 .App {
   min-height: 100vh;
   background: linear-gradient(to right top, #65dfc9, #6cdbeb);
@@ -25,7 +27,7 @@ h3 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  
+  position: relative;
 }
 
 .header {
@@ -77,6 +79,8 @@ h3 {
   align-items: center;
   justify-content: center;
 }
+
+/* SEARCH BAR */
 
 .search {
   
@@ -143,6 +147,8 @@ form {
   padding: 0.4rem 0rem;
 }
 
+/* RESULTS AND NOMINATIONS */
+
 .results {
   border-radius: 1rem;
   width: 50%;
@@ -179,6 +185,8 @@ form {
   
 }
 
+/* INDIVIDUAL MOVIES */
+
 .movie {
   width: 100%;
 
@@ -187,7 +195,6 @@ form {
   align-items: center;
   justify-content: space-between;
   
-  position: relative;
 }
 
 .movie-info {
@@ -197,7 +204,12 @@ form {
   max-width: 70%;
   font-weight: 700;
   font-size: 1rem;
-  color: #2271d8;
+  color: #3b7fd8;
+}
+
+.movie-info:hover {
+  cursor: pointer;
+  color: #8ebaf3;
 }
 
 .nominate-btn {
@@ -225,6 +237,7 @@ form {
   opacity: 35%;
   color: #144c94;
   background-color: white;
+
 }
 
 .remove-btn {
@@ -247,6 +260,8 @@ form {
   color: white;
 }
 
+/* BANNER */
+
 .banner {
   width: 95%;
   height: 5vh;
@@ -256,4 +271,62 @@ form {
   justify-content: center;
   align-items: center;
   color: #426696;
+}
+
+/* MOVIE CARD */
+
+.movieCardContainer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  backdrop-filter: blur(2rem);
+  z-index: 3;
+}
+
+.movieCard {
+  background-color: #6a8fbe;
+  width: 50vw;
+  height: 85vh;
+  
+  position: absolute;
+  left:25%;
+  top: 7.5%;
+  border-radius: 1rem;
+  border-style: solid;
+  border-width: 0.2rem;
+}
+
+.close-icon-container {
+  width: 98%;
+  height: 10vh;
+  display:flex;
+  justify-content: flex-end;
+  align-items: center;
+  
+}
+
+.close-icon {
+  font-size: 2rem;
+}
+
+.close-icon:hover {
+  cursor:pointer;
+  color:rgba(32, 32, 32, 0.212)
+}
+
+.data-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  
+}
+
+.poster-img {
+  width: 40%;
+}
+
+.detailed-movie-info-container {
+  width: 40%;
 }

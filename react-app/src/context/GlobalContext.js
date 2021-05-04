@@ -34,8 +34,6 @@ export const GlobalProvider = props => {
         dispatch({type: "REMOVE_MOVIE_FROM_NOMINATIONS", payload: id})
     }
 
-    
-
     return (
         <GlobalContext.Provider value={{searchTerm: state.searchTerm, results: state.results, nominations: state.nominations, updateSearchTerm, addMoviesToResults, addMovieToNominations, removeMovieFromNominations}}>
             {props.children}
